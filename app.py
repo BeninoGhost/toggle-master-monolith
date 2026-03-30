@@ -53,7 +53,7 @@ def init_db_command():
 @app.route("/", methods=["GET"])
 def home():
     return jsonify({
-        "message": "Toggle Master API online",
+        "message": "Toggle Master API online V1.0",
         "endpoints": {
             "health": "/health",
             "list_flags": "/flags",
