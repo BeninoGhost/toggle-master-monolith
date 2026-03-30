@@ -1,0 +1,21 @@
+name: Test Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: [self-hosted, linux, x64]
+
+    steps:
+      - name: Show user
+        run: whoami
+
+      - name: Show hostname
+        run: hostname
+
+      - name: Show current directory
+        run: pwd
+
+      - name: Show Docker containers
+        run: docker ps
